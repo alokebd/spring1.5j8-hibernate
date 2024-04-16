@@ -1,0 +1,91 @@
+{
+	"info": {
+		"_postman_id": "20b8590a-b18a-4928-83f5-cce90ff1ab95",
+		"name": "Spring1.5-Hibernate",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "33936986"
+	},
+	"item": [
+		{
+			"name": "v1/persons",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Sry Das\",\r\n    \"dob\": \"16/12/2000\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8081/v1/persons"
+			},
+			"response": []
+		},
+		{
+			"name": "v1/persons/4",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Mk Das (Ami)\",\r\n    \"dob\": \"24/07/2013\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8081/v1/persons/4"
+			},
+			"response": []
+		},
+		{
+			"name": "v1/persons/4",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8081/v1/persons/8"
+			},
+			"response": []
+		},
+		{
+			"name": "v1/persons",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:8081/v1/persons"
+			},
+			"response": []
+		}
+	]
+}
